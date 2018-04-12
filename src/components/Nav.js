@@ -20,6 +20,11 @@ class Nav extends Component {
              ( isLoggedIn() ) ? <Link to="/upload">Upload Content</Link> :  ''
             }
           </li>
+          <li>
+            {
+             ( isLoggedIn() ) ? <Link to="/screen">Screen Display</Link> :  ''
+            }
+          </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
           <li>

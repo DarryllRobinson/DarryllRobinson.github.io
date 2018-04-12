@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Upload from './components/Upload';
 import Display from './components/Display';
+import Screen from './components/Screen';
 import Callback from './components/Callback';
 import registerServiceWorker from './registerServiceWorker';
 import { Router, Route, browserHistory } from 'react-router';
@@ -13,6 +14,7 @@ const Root = () => {
       <Router history={browserHistory}>
         <Route path="/" component={Display}/>
         <Route path="/upload" component={Upload} onEnter={requireAuth} />
+        <Route path="/screen" component={Screen} onEnter={requireAuth} />
         <Route path="/callback" component={Callback} />
       </Router>
     </div>
