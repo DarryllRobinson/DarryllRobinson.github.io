@@ -1,6 +1,7 @@
 {
   "name": "miniflix",
   "version": "0.1.0",
+  "homepage" : "https://darryllrobinson.github.io/",
   "private": true,
   "dependencies": {
     "auth0-js": "^9.4.2",

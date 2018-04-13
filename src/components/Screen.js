@@ -28,7 +28,7 @@ class Screen extends Component {
     return (
       <div>
         <CloudinaryContext cloudName="flycrow">
-          <div className="embed-responsive embed-responsive-4by3">
+          <div className="embed-responsive embed-responsive-4by3" >
             <Video id="myVideo" publicId="test/vqx5qsaltgwwoocpgbb2" autoPlay>
               <Transformation width="250" height="150" crop="pad" />
             </Video>
