@@ -31,7 +31,15 @@
 .log {
   margin: 5px 20px 0 0;
 }
-.videos {
+/*.videos {
   border: 1px solid red;
   height:400px;
+}*/
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
