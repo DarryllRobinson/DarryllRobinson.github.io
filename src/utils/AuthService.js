@@ -4,17 +4,23 @@ import auth0 from 'auth0-js';
 const ID_TOKEN_KEY = 'id_token';
 const ACCESS_TOKEN_KEY = 'access_token';
 
+// *********************** PRODUCTION
+/*
+const CLIENT_ID = 'lrtEWZmSbkTSrlK0gQPON2VmmSkrr3dr';
+const CLIENT_DOMAIN = 'fcmcms.eu.auth0.com';
+const REDIRECT = 'https://www.stillproud.com/';
+const SCOPE = 'openid';
+const AUDIENCE = 'http://www.stillproud.com/';
+*/
+
+// *********************** DEVELOPMENT
+
 const CLIENT_ID = 'K3OQ3jHTVXcGu8mTgA4ayA92Pl7LUs3Z';
 const CLIENT_DOMAIN = 'fcmcms.eu.auth0.com';
 const REDIRECT = 'http://localhost:3000/callback';
 const SCOPE = 'openid';
 const AUDIENCE = 'http://localhost:3000/';
 
-/*const CLIENT_ID = 'EeobY3jxsMoFREmqfmsZwAALQb73WeWm';
-const CLIENT_DOMAIN = 'unicoder.auth0.com';
-const REDIRECT = 'http://localhost:3000/callback';
-const SCOPE = 'full:access';
-const AUDIENCE = 'http://miniflix.com';*/
 
 var auth = new auth0.WebAuth({
   clientID: CLIENT_ID,
@@ -28,6 +34,7 @@ export function login() {
     audience: AUDIENCE,
     scope: SCOPE
   });
+  alert('auth: ' + auth.authorize);
 }
 
 export function logout() {

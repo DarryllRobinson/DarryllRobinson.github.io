@@ -10,9 +10,9 @@ class Display extends Component {
   state = { videos: [] };
 
   getVideos() {
-    axios.get('http://res.cloudinary.com/flycrow/video/list/fcm.json')
+    axios.get('https://res.cloudinary.com/flycrow/video/list/fcm.json')
           .then(res => {
-            console.log(res.data.resources);
+            //console.log(res.data.resources);
             this.setState({ videos: res.data.resources});
     });
   }
